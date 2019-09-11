@@ -1,6 +1,7 @@
 #include "../include/Student_Info.h"
 #include "../include/grade.h"
 #include <limits>
+#include <list>
 
 //Sorting Student names in alphabetic order
 bool compare(const Student_Info & x, const Student_Info & y){
@@ -35,4 +36,46 @@ std::istream& read_hw(std::istream& in, std::vector<double>& hw){
     in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     return in;
 }
+
+
+//Fail grade Criteria
+bool fgrade(Student_Info& s){
+    return grade(s) < 60;
+}
+
+/*
+//Separating Pass and Fail grades into vectors
+std::vector<Student_Info> extract_fails(std::vector<Student_Info>& students){
+    std::vector<Student_Info> pass, fail;
+
+    std::vector<Student_Info>::size_type i = 0;
+
+    while(i != students.size()){
+        if(fgrade(students[i])){
+            fail.push_back(students[i]);
+            students.erase(students.begin() + i);
+        }
+        else {
+            ++i;
+        }
+    }
+    students = pass;
+    return fail;
+}*/
+
+//Re-written Pass/Fail vector as a list using iterators as opposed to indices
+std::list<Student_Info> extract_fails(std::vector<Student_Info>& students){
+    std::vector<Student_Info>::iterator iter = students.begin();
+    std::list<Student_Info> fail;
+    while(iter != students.end()){
+        if(fgrade(*iter)){
+            fail.push_back(*iter);
+            iter = students.erase(iter);
+        }
+        else
+            ++iter;
+    }
+    return fail;
+}
+
 

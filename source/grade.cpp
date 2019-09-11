@@ -16,13 +16,19 @@ double median(std::vector<double>& vec){
     double median = size % 2 == 0 ? (vec[mid - 1] + vec[mid]) /2 : vec[mid];
     return median;
 }
-
+double grade(Student_Info& s){
+    if (s.homework.size() == 0) {
+        throw std::domain_error("No homework was done");
+    }
+    return grade(s.midterm, s.finals, median(s.homework));
+}
+/*
 double grade(double midterm, double finals, std::vector<double>& hw){
     if (hw.size() == 0) {
         throw std::domain_error("No homework was done");
     }
     return grade(midterm, finals, median(hw));
-}
+}*/
 
 double grade(double midterm, double finals, double median){
     return 0.4*finals + 0.2*midterm + 0.4*median;

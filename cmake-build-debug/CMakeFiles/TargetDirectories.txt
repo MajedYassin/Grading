@@ -1,0 +1,8 @@
+/home/majed/CLionProjects/Grading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/app/CMakeFiles/rebuild_cache.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/app/CMakeFiles/Grading.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/app/CMakeFiles/edit_cache.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/source/CMakeFiles/rebuild_cache.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/source/CMakeFiles/grading_library.dir
+/home/majed/CLionProjects/Grading/cmake-build-debug/source/CMakeFiles/edit_cache.dir
