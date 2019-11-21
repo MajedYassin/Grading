@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Grading.dir/main.cpp.o  -o Grading ../source/libgrading_library.a 

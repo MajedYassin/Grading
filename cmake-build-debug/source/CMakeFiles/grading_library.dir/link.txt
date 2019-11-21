@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgrading_library.a  CMakeFiles/grading_library.dir/read_grade.cpp.o CMakeFiles/grading_library.dir/grade.cpp.o
-/usr/bin/ranlib libgrading_library.a
