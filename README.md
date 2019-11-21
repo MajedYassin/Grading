@@ -9,13 +9,19 @@ The program takes a list user input studen names, alongside the respective grade
 
 
 ## Technology 
-language used : C++ version 11.
-
+Software Requirements: 
+- language: C++ version 11.
+- CMake minimum version 3.14.
 
 ## Setup 
-clone from Git address 
+clone project file from Git address and load CMake project in build folder: 
 
 ```
-$ git clone "https://github.com/MajedYassin/TwoLink_Manipulator.git"
+$ git clone "https://github.com/MajedYassin/Grading.git"
+$ cd <cloned repository>
+$ mkdir build 
+$ cd build
+$ cmake ..
+$ make -j "number of threads available" 
 
 ```
