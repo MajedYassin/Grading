@@ -1,7 +1,6 @@
 # Grading
 
 ## Description 
-
 The program takes a list user input studen names, alongside the respective grades from each students coursework, midterm and final exams then:
 - Calculates the overall final grade of each student, based on a pre-defined grade weighting; 
 - Sorts the students into a list ordered from highest to lowest grade;  
